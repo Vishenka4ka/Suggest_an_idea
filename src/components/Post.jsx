@@ -12,7 +12,7 @@ const Post = (props) => {
                 {props.post.description}
             </div>
             <div className={classes.button_container}>
-                <Like />
+                <Like likes={props.post.likes}/>
                 <Comment />
             </div>
         </div>
