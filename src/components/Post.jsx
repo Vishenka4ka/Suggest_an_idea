@@ -2,7 +2,7 @@ import React from "react";
 import classes from "../styles/PostStyle.module.css"
 import Like from "./Like"
 import Author from "./Author"
-import Comment from "./Comment"
+import CommentButton from "./CommentButton"
 
 const Post = (props) => {
     return (
@@ -13,7 +13,7 @@ const Post = (props) => {
             </div>
             <div className={classes.button_container}>
                 <Like likes={props.post.likes}/>
-                <Comment />
+                <CommentButton />
             </div>
         </div>
     )
